@@ -24,9 +24,44 @@ A full description of the “cleaning” the data underwent is included in the i
 In summary, we started with 426,880 rows. We removed those rows with missing key data (price, odometer, year, transmission, manufacturer, title, model and fuel). In addition, missing paint colors were set to ‘unknown’ and text was removed from the 'Cylinders' values, which were then converted to numeric. We were then left with 211,345 to perform our analysis on.
 
 ## Key Findings
-The key findings of this analysis are included in the included report Project Car Price Report. 
-In summary, a Random Forrest model was most effective at predicting car price (with a MAE of 3,574). Factors that deals should seek out are year, transmission type, cars with more cylinders, pickups and trucks. Cars that are in “good” condition and are white should also be favored.
-Dealers should avoid, Toyotas, gas vehicles with forward drives, high odometers and sedans. 
+The key findings of this analysis are included in the included report Project Car Price Report word file. 
+
+In summary, a Random Forrest model was most effective at predicting car price with the following efficacy.
+•	Random Forest - Mean Absolute Error (MAE): 3574.082382874411
+•	Random Forest - Mean Squared Error (MSE): 35694741.27733562
+•	Random Forest - Root Mean Squared Error (RMSE): 5974.507617982893
+•	Random Forest - R-squared (R2): 0.7863318381167035
+
+After analyzing the attached data the factor most correlated with the vehicles price is transmission type “other” and the car’s year.  Vehicles with more cylinders are more valuable as are pickups more than trucks and trucks, in turn are more expensive than coupes. Dealers should pay particular attention to cars that are in “Good” condition as this impacts price even more than vehicles that are “like new” or “new”. White is the only color that stands out as having a positive impact on the price.
+
+As for manufacturers, dealers should favor these in the following order
+1.	Ram
+2.	Ford
+3.	Chevrolet
+4.	Audi
+5.	Jeep
+
+Below is a summar of the major factors impacting price;
+- transmission_other	0.39529311
+- year	0.381936
+- cylinders	0.3323686
+- type_pickup	0.25855806
+- type_truck	0.179219
+- manufacturer_ram	0.164772
+- type_other	0.16218604
+- condition_good	0.13177163
+- paint_color_white	0.11871704
+- fuel_other	0.11417593
+
+Conversely, dealers should avoid hatchback vehicles, and Honda as a manufacturer. Higher odometers are correlated with lower prices as are gas vehicles, sedans and vehicles with front wheel drive.
+- type_hatchback	-0.1070372
+- manufacturer_honda	-0.1283289
+- condition_fair	-0.1312539
+- odometer	-0.176007
+- fuel_gas	-0.1968016
+- type_sedan	-0.2330994
+- drive_fwd	-0.3087462
+
 
 ## Visualizations
 The following visualizations are also included
