@@ -14,7 +14,7 @@ This project analyzes a dataset on used car prices and provides a clear recommen
 
 ## Jupyter Notebook
 Run the below Jupyter notebook to see the analysis
-https://github.com/rsavage2201/CarPrices/blob/main/Project%20Car%20Prices%20RMS%20(11.1).ipynb
+[Project Car Prices RMS (11.1)](https://github.com/rsavage2201/CarPrices/blob/main/Project%20Car%20Prices%20RMS%20(11.1).ipynb)
 
 ## Data
 The project uses a provided dataset (vehicles.csv).When running the Jupyter notebook a “cleaned” version of the dataset (vehicles_cleaned.csv) will be saved. I did not upload either of these files into the repo as they are too large.
